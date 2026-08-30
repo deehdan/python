@@ -50,4 +50,4 @@ for i, student_info in enumerate(students, start=1):
     print("=" * 35)
 
 print(f"Total Students: {len(students)}")
-print("=" * 40)
+print("=" * 35)
