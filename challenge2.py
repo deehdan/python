@@ -52,6 +52,8 @@ while True:
         break
 
 classdata = pd.DataFrame(results)
+classdata = classdata.sort_values(by = "marks", ascending = False)
 print(classdata)
 
-classdata.to_csv("classdata.csv")
+# create a csv file
+#classdata.to_csv("classdata.csv")
