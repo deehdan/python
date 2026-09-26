@@ -10,6 +10,7 @@ def result(name , marks , grade):
     }
     return details
 
+
 while True:
     name = input("Enter your name: ")
     print("Enter you marks below")
@@ -25,7 +26,7 @@ while True:
             print("Invalid")
         else: 
             student_marks = (maths + coding + physics) / 3
-            print(student_marks)
+            print(f"{student_marks :.2f}")
             break
 
     if student_marks > 90: 
@@ -39,8 +40,10 @@ while True:
 
     print(grade)
 
+    dpmarks = (f"{student_marks:.2f}")
+
     #create new student
-    new_student = result(name, student_marks, grade)
+    new_student = result(name, dpmarks, grade)
 
     #add a student
     results.append(new_student)
@@ -53,6 +56,8 @@ while True:
 
 classdata = pd.DataFrame(results)
 classdata = classdata.sort_values(by = "marks", ascending = False)
+classdata["rank"] = range(1, len(classdata) + 1)
+classdata = classdata[["rank", "name", "marks", "grade"]]
 print(classdata)
 
 # create a csv file
