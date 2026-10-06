@@ -15,4 +15,4 @@ password = ""
 for i in range(length):
     password += random.choice(characters)
 
-print("Your password is: \n", password, "\n \n")
+print("Your password is: ", "\n\n", password, "\n")
