@@ -8,6 +8,6 @@ array = np.array([[1, 2, 3, 4],
 # print(np.var(array))
 # print(np.min(array))
 # print(np.max(array))
-# print(np.argmax(array))
-# print(np.sum(array, axis = 0))
-print(np.sum(array, axis = 1))
+# print(np.argmax(array))  # index of the max
+# print(np.sum(array, axis = 0))  # for columns
+print(np.sum(array, axis = 1))  # for rows

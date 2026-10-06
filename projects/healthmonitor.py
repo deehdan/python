@@ -9,6 +9,7 @@ while True:
           "3. Health analysis")
     service = int(input("Enter your choice here(1, 2, 3): "))
 
+#Weight converter
     if service == 1:
 
         print("WEIGHT CONVERTER \n ")
@@ -35,6 +36,7 @@ while True:
         except:
             print("Enter valid measurements!")
 
+#Height converter
     elif service == 2:
         print("HEIGHT CONVERTER")
         print("=" * 16)
@@ -62,6 +64,7 @@ while True:
         except:
             print("Enter valid measurements!")
 
+#Health monitor 
     elif service == 3:
         print("WEIGHT INPUT")
         print("=" * 16)
@@ -138,16 +141,11 @@ while True:
         elif temperature > 38:
             print("You have a fever")
         else:
-            print("You are healthy")
+            print("You temperature is healthy")
 
     else:
         print("Enter a valid choice")
         
-
-
-
-
-    
     cont = input("Do you want to continue (y/n)? ")
     if cont == "y":
         continue
